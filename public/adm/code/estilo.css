@@ -1,0 +1,379 @@
+body{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    margin:0px;
+}
+*{
+    box-sizing: border-box;
+    user-select: none;
+}
+p,h1,h2,h3,h4,li, a{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0px;
+}
+body>nav{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    height: 9vh;
+    background: black;
+    overflow: hidden;
+}
+nav>*{
+    display: inline-block;
+    margin:0;
+    height: 100%;
+}
+body>nav h1{
+    font-size: 4vh;
+    float: left;
+    padding: 2vh;
+    color:white
+}
+body>nav ul{
+    float:right;
+    padding: 0px 1vh;
+    list-style: none;
+}
+body>nav ul li{
+    display: inline-block;
+    font-size: 2vh;
+    color: white;
+    padding: 2vh;
+    padding-bottom:5vh !important;
+    margin-top: 1vh;
+    font-weight: 100;
+    border-top-left-radius: 1vh;
+    border-top-right-radius: 1vh;
+}
+.btnselect,nav ul li:hover{
+    cursor:pointer;
+    background: white;
+    color:black;
+}
+section{
+    position: relative;
+    margin-top: 9vh;
+    height: 91vh;
+    width: 100vw;
+    background-image: url(https://th.bing.com/th/id/OIP.6nz_UwRyKnrJKYh49dB4uQHaEo?pid=ImgDet&rs=1);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0vh 5vh black inset;
+    scroll-behavior: smooth;
+
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+section article{
+    position:relative;
+    display: block;
+    min-height: 100%;
+    width: 100vw;
+    min-width: 50vw;
+    margin: 0px auto;
+    background: rgba(255,255,255,0.6);
+}
+h4{
+    font-size: 4vh;
+    text-align: center;
+    text-decoration:none;
+    padding: 3vh 1vh
+}
+#gestao>div{
+    position:relative;
+    display:block;
+    height:100%;
+    width:100%;
+}
+#gestao nav{
+    position:relative;
+    width:100%;
+    height:12vh;
+    background:black;
+}
+#gestao nav>div{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:0px 2vh;
+}
+#barraRegistros{
+    z-index:1;
+}
+#barraCampos{
+    z-index:-1;
+}
+#gestao nav button{
+    float:right;
+    margin:2vh;
+    height:7vh;
+    font-size:2vh;
+    background:white;
+    border:none;
+    outline:0;
+    border-radius:1vh;
+    min-width: 12vh;
+    box-shadow: 0px 0px 1vh inset;
+    font-weight:bold;
+}
+#gestao nav button:hover{
+    background:black;
+    border:solid white 0.1vh;
+    color:white;
+
+    cursor:pointer;
+}
+#camposFiltro{
+    float:left;
+    height:100%;
+    width:auto;
+}
+#camposFiltro > *{
+    display:inline-block;
+    outline:0;
+    font-size:2vh;
+    border-radius:1vh;
+    height:7vh;
+    margin: 2vh 1vh;
+}
+#camposFiltro > select{
+    margin: 1vh;
+}
+#camposFiltro > input{
+    width:20vh;
+    text-align:center;
+    border:0px;
+}
+#displayGestao{
+    position:relative;
+    width:100%;
+    height:80vh;
+    background:rgba(0,0,0,0.4);
+}
+#displayGestao>*{
+    height: 100%;
+    min-width: 100%;
+    overflow: auto;
+    padding: 0vh;
+}
+#camposForm{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    padding: 2vh;
+    justify-content: space-evenly;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#camposForm>div{
+    position:relative;
+    display:block;
+    width: 50vh;
+    max-width:100%;
+    height: 7vh;
+    margin: 1vh 0px;
+}
+#camposForm>div *{
+    font-size: 2vh;
+}
+#camposForm>div label{
+    position:absolute;
+    top:2vh;
+    left:0;
+    width:28%;
+    text-align: right;
+    z-index:999;
+    color:white;
+    font-family: Verdana;
+}
+#camposForm>div input{
+    position:relative;
+    float:right;
+    width:70%;
+    height:100%;
+    color:black;
+    z-index:1;
+}
+
+#blocoRegistros{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display:block;
+    overflow: auto;
+    padding: 0vh;
+    transition: opacity 0.5s;
+    z-index:1;
+}
+
+table {
+    border-collapse: collapse;
+    width: auto;
+    min-width: 100%;
+}
+
+thead{
+    overflow: hidden;
+    border-radius: 1vh;
+}
+
+th, td {
+    background-color: var(--cor-table);
+    position: relative;
+    padding: 1vh;
+    font-size: 2vh;
+    border-bottom: 0.1vh solid black;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+td{
+    color:white;
+}
+th{
+    border-left: 0.2vh solid black;
+    border-right: 0.2vh solid black;
+}
+
+.linha-topo {
+    background-color:white;
+    font-weight: bold;
+    user-select: none;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.linha-topo *{
+    user-select: none;
+}
+table tbody>tr:hover,.linhamarcada{
+    background: rgba(0,0,0,0.2);;
+    cursor: pointer;
+}
+
+.resizable {
+    position: relative;
+    cursor: ew-resize;
+}
+
+.resizer {
+    position: absolute;
+    top: 0;
+    right: -9vh;
+    width: 18vh;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+#registroContext{
+    display: none;
+    position: fixed;
+    height: auto;
+    width: auto;
+    border-radius: 1vh;
+    overflow: hidden;
+    box-shadow: 0vh 0vh 1vh black;
+    background: rgba(255,255,255,0.8);
+    z-index: 9;
+}
+#registroContext p{
+    color: black;
+    font-size: 2vh;
+    padding: 1vh 3vh 1vh 2vh;
+}
+#registroContext p:hover{
+    box-shadow: 0px 0px 1vh black inset;
+    cursor: pointer;
+}
+
+#mesagemAlerta{
+    position: fixed;
+    display:none;
+    padding: 2vh 4vh;
+    top: 1vh;
+    left: 30vh;
+    font-size: 2vh;
+    color: white;
+    font-weight: bold;
+    -webkit-text-stroke: 0.1vh black;
+    border-radius: 1vh;
+    box-shadow: 0px 0px 2vh white inset;
+    height: auto;
+    max-width: calc(100% - 4vh);
+    text-align: center;
+}
+#mesagemAlerta:hover{
+    cursor:pointer;
+    opacity:0.5;
+}
+
+#conta>div{
+    display: block;
+    width: 70vh;
+    height: 100%;
+    margin: 0px auto;
+}
+#conta img{
+    display: block;
+    width: 50%;
+    margin: 0px auto;
+    padding: 5vh 0px;
+    border-radius:100%;
+}
+
+#conta form{
+    display: block;
+    padding: 2vh;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    border-radius: 2vh;
+}
+#conta input{
+    display:block;
+    width: 100%;
+    margin: 1vh 0px;
+    border:0px;
+    outline:0;
+    height:5vh;
+    font-size: 3vh;
+    text-align: center;
+}
+#conta input[disabled=true]{
+    background:transparent;
+    color:white;
+}
+#conta input[disabled=false]{
+    background:rgba(255,255,255,0.4);
+    color:black;
+}
+#conta button{
+    display:block;
+    margin:3vh auto;
+    outline:0px;
+    background:transparent;
+    border:solid 0.1vh white;
+    border-radius:1vh;
+    color:white;
+    height:5vh;
+    padding:0px 2vh;
+    font-size: 3vh;
+}
