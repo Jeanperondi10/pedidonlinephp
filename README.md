@@ -4,24 +4,24 @@
 <h5 align="center">API de Pedidos de Produtos em PHP, para o DevEvolution<h5>
   
 ## 📦 Introdução
+A instalação desse projeto cria um servidor Web acessivel no navegador. <br><br>
+- Página inicial: contém um exemplo de site genérico, com um Banner e alguns artigos que podem ser acessados navegando pela barra de menus localizado na parte superior a direita.<br><br>
+
+ACESSO:
+- Autenticação: para acessar a interface de gerenciamento das informações, é necessário autenticar-se por meio de uma tela de login.<br>
+- Registro: para poder se autenticar por login, primeiro é preciso se registrar, preenchendo um formulário na mesma página de acesso.<br>
+
+<br><br>
+  
+GERENCIAMENTO POR INTERFACE
+- Dashbord: (Em desenvolvimento) foi iniciado essa funcionalidade, porém não foi possivel terminar a tempo : ( <br>
+- Gestão CRUD: em uma  <br>
+  
 
 <br/>
 
 
 ## 🚀 Preparar Lançamento
-
-<ul>
-  <li>Baixe o arquivo zipado do projeto, e descompacte na sua máquina local.</li>
-  <li>Instale o NVM(Gerenciador de pacotes), caso não tiver.<br>Com <b>wGet</b>:<code>wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash</code><br/>Ou com <b>Curl</b>:<code>curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
-</code></li>
-  <li>Instale o Nodejs na versão <b>16.18.0</b>(mais adequada), utilizando o nvm.<br/><code>nvm install 16.18.0</code></li>
-  <li>Instale o NPM, caso não tiver, com o comando <code>npm install npm -g</code><br/> E no diretório raiz do projeto execute o comando:<code>npm install</code><br/> para instalar todos os pacotes necessários descritos no arquivo <i>packtage.json</i>.</li>
-  <li>Instale o banco de dados <b>MongoDB</b>, através do site oficial: https://www.mongodb.com/</li>
-  <li>Opcionalmente pode ser instalado ferramentas facilitadoras de inicialização do servidor.<br/>
-  <b>Nodemon:</b><code>npm install nodemon --savedev</code> e <b>Pm2:</b><code>npm install pm2 -g</code></li>
-  <li>No terminal acesse o diretório raiz do projeto e execute: <code>node index.js</code></li>
-  <li>Show! agora o servidor deve estar acessivel pelo link: https://localhost:3000 <br/>para testar requisições instale o PostMan ou outro programa similar, e consulte as diferentes rotas e funções a seguir.</li>
-</ul>
   
 ## 📋 Listagem de Rotas
 
