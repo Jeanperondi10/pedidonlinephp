@@ -50,7 +50,7 @@ Rota de arquivos PHP que utilizam das classes para enviar/receber as informaçõ
 Implementa algumas operações básicas em funções especicias que são importadas pelos arquivos das rotas.<br/>
   
 ### <b>/class</b><br/>
-Difinição das classes agrupadas em Namespaces especificos Acesso, Negocio e Comercio. Que herdam de uma única classe abstrata que implementa uma interface básica para a realização das operações CRUD para os diferentes tipos de tabelas.<br/>
+Definição das classes agrupadas em Namespaces especificos Acesso, Negocio e Comercio. Que herdam de uma única classe abstrata que implementa uma interface básica para a realização das operações CRUD para os diferentes tipos de tabelas.<br/>
 
 ### <b>/config</b><br/>
 Configuração da conexão com o banco de dados e código SQL base para criar as tabelas do banco de dados.<br/>
