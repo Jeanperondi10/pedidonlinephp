@@ -47,15 +47,6 @@ Rota de arquivos PHP que utilizam das classes para enviar/receber as informaçõ
 <b>/api/class</b><br/>
 Difinição das classes agrupadas em Namespaces especificos Acesso, Negocio e Comercio. Que herdam de uma única classe abistrata que implementa uma interface básica para a realização das operações CRUD para os diferentes tipos de tabelas.<br/>
 
-<b>/</b><br/>
-Recebe somente os dados necessários para efetuar a consulta no banco, se ocorrer tudo certo retorna para o controller os dados esperados<br/>
-
-<b>/src/setup</b><br/>
-Configura o Banco de dados, armazena dados padrões(de alimentação por rota) e o mais importante define os nomes dos documentos/rotas do crud <br/>
-
-
-
-
 
 
 
