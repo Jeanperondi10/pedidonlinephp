@@ -47,7 +47,7 @@ Rota de arquivos PHP que utilizam das classes para enviar/receber as informaçõ
 - delete.php;
   
 ### <b>/api/lib.php</b><br/>
-Implementa algumas operações básicas em funções especicias que são importadas pelos arquivos das rotas.<br/>
+Implementa algumas operações básicas em funções especificas que são importadas pelos arquivos das rotas.<br/>
   
 ### <b>/class</b><br/>
 Definição das classes agrupadas em Namespaces especificos Acesso, Negocio e Comercio. Que herdam de uma única classe abstrata que implementa uma interface básica para a realização das operações CRUD para os diferentes tipos de tabelas.<br/>
