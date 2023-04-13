@@ -1,7 +1,7 @@
 
 <h1 align="center">Documentação - pedidOnline</h1>
 
-<h5 align="center">API de Pedidos de Produtos em PHP, para o DevEvolution<h5>
+<h5 align="center">API/Crud de Pedidos de Produtos em PHP, para o DevEvolution<h5>
   
 ## 📦 Introdução e orientações gerais
 A instalação desse projeto cria um servidor Web acessivel no navegador. <br>
