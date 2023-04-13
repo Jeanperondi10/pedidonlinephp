@@ -3,30 +3,24 @@
 
 <h5 align="center">API de Pedidos de Produtos em PHP, para o DevEvolution<h5>
   
-## 📦 Introdução
-A instalação desse projeto cria um servidor Web acessivel no navegador. <br><br>
+## 📦 Introdução e orientações gerais
+A instalação desse projeto cria um servidor Web acessivel no navegador. <br>
 - Página inicial: contém um exemplo de site genérico, com um Banner e alguns artigos que podem ser acessados navegando pela barra de menus localizado na parte superior a direita.<br><br>
 
+## 🚀 Preparar Lançamento
 ACESSO:
 - Autenticação: para acessar a interface de gerenciamento das informações, é necessário autenticar-se por meio de uma tela de login.<br>
 - Registro: para poder se autenticar por login, primeiro é preciso se registrar, preenchendo um formulário na mesma página de acesso.<br>
 
-<br><br>
+<br>
   
-GERENCIAMENTO POR INTERFACE
+GERENCIAMENTO
 - Dashbord: (Em desenvolvimento) foi iniciado essa funcionalidade, porém não foi possivel terminar a tempo : ( <br>
-- Gestão CRUD: em uma  <br>
-  
-
-<br/>
+- Gestão CRUD: permite manipular as informações de tipos de cadastros em uma regra de negócio genérica já definida.<br> 
+- Ações/Efeitos: Na barra inferior da tela existe um campo 'select' que permite selecionar um tipo de cadastro para buscar automaticamente todos os registros e listar em uma tabela.<br>Onde com a ação de duplo clique em uma linha é aberto a tela de formulário, com os campos e informações do registro daquele tipo cadastro especifico. Outra ação que pode ser feita para editar um registro é clicar com o botão direito do mouse encima de uma linha da tebela, será aberto uma caixa suspensa com opções de Editar, Deletar e (Selecionar(Em dev)) que permite fazer manipulações nos dados;
 
 
-## 🚀 Preparar Lançamento
-  
-## 📋 Listagem de Rotas
-
-
-### Tipos de {cadastro} e informações
+## 📋 Tipos de {cadastro} e informações
   
 | Cadastro     | Campos |
 | --------     | --------   |
@@ -40,20 +34,20 @@ GERENCIAMENTO POR INTERFACE
 
  
 ## 🛠️ Arquitetura do Software
-O arquivo nomeado como "index.js" que fica localizado na pasta raiz do projeto, cria um  o servidor importando as blibiotecas necessárias e definindo o roteamento da API.<br/>
+<br/>
 
 ### Estruturação de diretórios
 
-<b>/src</b><br/>
-Configura, autentica e define diferentes fluxos de comunicação para a consulta da API no banco mongoDB;<br/>
+<b>/index.php</b><br/>
+Página de um site demonstrativo que contém artigos que são navegados por menus.<br/>
 
-<b>/src/routes</b><br/>
-Define os dois diferentes tipos de rotas da aplicação(CRUD e Acesso) e envia para o controller praticamente tudo recebe.<br/>
+<b>/api</b><br/>
+Rota de arquivos PHP que utilizam das classes para enviar/receber as informações do banco.<br/>
 
-<b>/src/controllers</b><br/>
-Filtra os dados que serão utilizados para a consulta porterior, e retorna para a rota a resposta quando finalizado.<br/>
+<b>/api/class</b><br/>
+Difinição das classes agrupadas em Namespaces especificos Acesso, Negocio e Comercio. Que herdam de uma única classe abistrata que implementa uma interface básica para a realização das operações CRUD para os diferentes tipos de tabelas.<br/>
 
-<b>/src/services</b><br/>
+<b>/</b><br/>
 Recebe somente os dados necessários para efetuar a consulta no banco, se ocorrer tudo certo retorna para o controller os dados esperados<br/>
 
 <b>/src/setup</b><br/>
