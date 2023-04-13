@@ -35,26 +35,24 @@ GERENCIAMENTO
  
 ## 🛠️ Arquitetura do Software
 
-###<b>/index.php</b>
+### <b>/index.php</b>
 Página de um site demonstrativo que contém artigos que são navegados por menus.<br/>
 
-###<b>/api</b>
+### <b>/api</b>
 Rota de arquivos PHP que utilizam das classes para enviar/receber as informações do banco.
 - create.php;
 - read.php;
 - readSingle.php;
 - update.php;
 - delete.php;
-- read.php;
-<br/>
-
-###<b>/api/lib.php</b><br/>
+  
+### <b>/api/lib.php</b><br/>
 Implementa algumas operações básicas em funções especicias que são importadas pelos arquivos das rotas.<br/>
   
-###<b>/class</b><br/>
+### <b>/class</b><br/>
 Difinição das classes agrupadas em Namespaces especificos Acesso, Negocio e Comercio. Que herdam de uma única classe abstrata que implementa uma interface básica para a realização das operações CRUD para os diferentes tipos de tabelas.<br/>
 
-###<b>/config</b><br/>
+### <b>/config</b><br/>
 Configuração da conexão com o banco de dados e código SQL base para criar as tabelas do banco de dados.<br/>
 
 
